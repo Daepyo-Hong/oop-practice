@@ -14,7 +14,6 @@ class UserTest {
 		User user = new User();
 		// when
 		user.initPassword(()->"abcdefgh");  //@FunctionalInterface를 람다로 구현
-
 		// then
 		assertThat(user.getPassword()).isNotNull();
 	}
